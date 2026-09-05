@@ -15,6 +15,7 @@ Plays a direct, opinionated product leader who interviews you about the plan one
 - Checks the codebase or your notes before asking you something it could look up.
 - Ends with a summary: decisions, open items, next steps.
 
-## Use it
+## Install
 
-Copy `debate.md` into `~/.claude/commands/` and call `/debate <plan or file>`.
+- **Claude Code:** copy `debate.md` to `~/.claude/commands/`, call `/debate <plan or file>`.
+- **Codex:** copy `debate.md` to `~/.codex/prompts/`, call `/debate <plan or file>`.

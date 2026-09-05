@@ -12,6 +12,7 @@ Loads your own style guide first, then drafts from it: your sentence rhythm, you
 
 Keep your writing rules in `~/.claude/STYLE.md`, or point the skill at wherever they live. Without one, the skill asks you for a few writing samples and works from those.
 
-## Use it
+## Install
 
-Copy `draft.md` into `~/.claude/commands/` and call `/draft <what to write>`.
+- **Claude Code:** copy `draft.md` to `~/.claude/commands/`, call `/draft <what to write>`.
+- **Codex:** copy `draft.md` to `~/.codex/prompts/`, call `/draft <what to write>`.

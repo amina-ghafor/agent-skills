@@ -6,8 +6,9 @@ Claude cannot reliably review its own output. In the same context that produced 
 
 ## What it does
 
-Spawns a separate agent with fresh context to review a document against a fixed checklist: accuracy, source integrity, stale claims, consistency, structure, voice, completeness, concision. It returns ranked findings with locations and one-line fixes, and does not touch the file.
+Runs the review in fresh context, against a fixed checklist: accuracy, source integrity, stale claims, consistency, structure, voice, completeness, concision. It returns ranked findings with locations and one-line fixes, and does not touch the file.
 
-## Use it
+## Install
 
-Copy `review-output.md` into `~/.claude/commands/` and call `/review-output <path or URL>`.
+- **Claude Code:** copy `review-output.md` to `~/.claude/commands/`, call `/review-output <path or URL>`. The command launches a subagent with the Task tool, so `Task` must be available to it.
+- **Codex:** copy `review-output.md` to `~/.codex/prompts/`, call `/review-output <path or URL>`. The review runs as a separate `codex exec` call.

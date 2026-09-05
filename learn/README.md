@@ -14,6 +14,7 @@ Explains one concept at the 80/20. Plain language first, then the term, grounded
 - Defines jargon inline rather than assuming it.
 - Keeps each answer short.
 
-## Use it
+## Install
 
-Copy `learn.md` into `~/.claude/commands/` and call `/learn <concept>`.
+- **Claude Code:** copy `learn.md` to `~/.claude/commands/`, call `/learn <concept>`.
+- **Codex:** copy `learn.md` to `~/.codex/prompts/`, call `/learn <concept>`.

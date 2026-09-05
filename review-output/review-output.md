@@ -1,12 +1,11 @@
----
-allowed-tools: Task, Read, Grep, Glob, WebFetch, Bash
----
-
 Review the target in $ARGUMENTS.
 
-The review must be done by a separate agent, not by you. Do not read the target and review it yourself: in the context that produced a document, you tend to agree with it. Your job here is to launch the reviewer and relay what it finds.
+The review must run with fresh context, not in this session. In the context that produced a document, you tend to agree with it. Your job here is to start the independent review and relay what it finds.
 
-Launch a subagent with the Task tool now. Pass it the target path or URL and the checklist below. Ask for findings ranked by severity, not a rewrite. When it returns, present its findings as they are.
+- **Claude Code:** launch a subagent with the Task tool (this command needs `Task` available). Pass it the target and the checklist below.
+- **Codex:** run the review in a separate `codex exec` call, passing the target and the checklist.
+
+Ask for findings ranked by severity, not a rewrite. Present them as they come back. Do not edit the file unless asked after seeing the findings.
 
 ## Checklist
 
@@ -21,4 +20,4 @@ Launch a subagent with the Task tool now. Pass it the target path or URL and the
 
 ## Output
 
-Findings only, grouped Critical / Worth fixing / Minor, each with a location and a one-line fix. Do not edit the file unless asked after seeing the findings.
+Findings only, grouped Critical / Worth fixing / Minor, each with a location and a one-line fix.
