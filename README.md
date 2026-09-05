@@ -10,5 +10,7 @@ Drop a skill's `.md` file into your Claude Code commands directory (`~/.claude/c
 | --- | --- |
 | [learn](learn/) | Explains a technical concept at the 80/20, pitched at a non-engineer |
 | [debate](debate/) | Stress-tests a plan by questioning it, one point at a time, before you commit |
+| [draft](draft/) | Writes in your own voice by loading your style guide first, then self-checking against it |
+| [review-output](review-output/) | Reviews a document with a fresh agent so the reviewer is not the author |
 
 More arrive one at a time.
