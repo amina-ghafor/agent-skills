@@ -1,4 +1,4 @@
-# dayplan
+# 📅 dayplan
 
 ## The problem
 

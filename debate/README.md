@@ -1,4 +1,4 @@
-# debate
+# 🥊 debate
 
 ## The problem
 

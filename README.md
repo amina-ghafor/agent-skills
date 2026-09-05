@@ -6,15 +6,16 @@ Every skill is a plain Markdown file. It runs in **Claude Code** (`~/.claude/com
 
 ## Skills
 
-### Think it through
+### 🧠 Think it through
 - **[debate](debate/)** - a direct product leader interviews you about a plan, one question at a time, before you commit.
 - **[learn](learn/)** - explains a technical concept at the 80/20, pitched at a non-engineer.
 
-### Plan and record
+### 📓 Plan and record
+- **[kickoff](kickoff/)** - starts a build project with the planning artefacts sized to the project: one-pager, scope, a single metric, repo set up.
 - **[dayplan](dayplan/)** - builds today's plan from your calendar and backlog. Read only.
 - **[capture](capture/)** - writes a finished session into the right notes.
 
-### Write and review
+### ✍️ Write and review
 - **[draft](draft/)** - drafts in your voice by loading your style guide first, then self-checking against it.
 - **[review-output](review-output/)** - reviews a document with a fresh, independent agent, so the reviewer is not the author.
 
