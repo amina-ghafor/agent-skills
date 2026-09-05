@@ -1,6 +1,12 @@
-Review the target in $ARGUMENTS. The point is independence: if you wrote it, do not review it yourself. Spawn a subagent with fresh context to review, so the reviewer is not the author.
+---
+allowed-tools: Task, Read, Grep, Glob, WebFetch, Bash
+---
 
-Give the reviewer the target and this checklist. Ask for findings ranked by severity, not a rewrite.
+Review the target in $ARGUMENTS.
+
+The review must be done by a separate agent, not by you. Do not read the target and review it yourself: in the context that produced a document, you tend to agree with it. Your job here is to launch the reviewer and relay what it finds.
+
+Launch a subagent with the Task tool now. Pass it the target path or URL and the checklist below. Ask for findings ranked by severity, not a rewrite. When it returns, present its findings as they are.
 
 ## Checklist
 
