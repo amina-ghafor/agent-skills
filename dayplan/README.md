@@ -2,21 +2,21 @@
 
 ## The problem
 
-You start the day with a calendar and a task list and have to work out, in your head, what actually fits between the meetings and what to touch first. It is the same puzzle every morning.
+Every morning is the same arithmetic: a calendar full of fixed points, a backlog full of candidates, and no quick way to see which tasks actually fit the gaps without doing the sums by hand.
 
 ## What it does
 
-Reads today's calendar and your backlog, then writes one plan to the terminal: the fixed points and the gaps, which tasks fit which gap, one task to start with, and anything due this week that will not fit today. It does not edit anything.
+Reads the day's calendar and backlog, then returns one plan: the fixed points and the space between them, a task matched to each gap, a named starting task, and anything due this week that will not make it into today. Nothing gets written back.
 
 ## How it behaves
 
-- Read only. Never touches the backlog or the calendar.
-- One plan, not a set of options.
-- If the day is already full, says so and names what gets dropped.
+- Read only, always. The calendar and backlog are never edited.
+- Returns one plan, not a menu of options.
+- A full day is reported as full, with what gets cut named explicitly.
 
 ## Assumes
 
-The [second-brain](https://github.com/amina-ghafor/second-brain) backlog format: `## sections`, and task lines with a `(1h)` or `(30m)` estimate.
+The [second-brain](https://github.com/amina-ghafor/second-brain) backlog format: `## `-headed sections, tasks carrying a `(1h)` or `(30m)` estimate.
 
 ## Install
 
